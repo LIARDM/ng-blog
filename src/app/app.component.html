@@ -1,3 +1,19 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Blog d'Activité OpenClassRooms</h1>
+        <app-blog-posts *ngFor="let blogPost of blogPosts"
+         [title]="blogPost.title"
+         [content]="blogPost.content"
+         [loveIts]="blogPost.loveIts"
+         [created_at]="blogPost.loveIts">
+        </app-blog-posts>
+    </div>
+  </div>
+</div>
+
+<!--
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
@@ -15,3 +31,4 @@
     </div>
   </div>
 </div>
+-->

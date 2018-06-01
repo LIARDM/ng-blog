@@ -18,6 +18,28 @@ export class AppComponent
           }, 2000
         );
     });
+    blogPosts=
+    [
+      {
+        title : 'Mon premier post',
+        content : 'Le contenu de mon premier post !',
+        loveIts : 1,
+        created_at : '31/05/2018 9:50 AM'
+      },
+      {
+        title : 'Mon second post',
+        content : 'Le contenu de mon deuxième post.',
+        loveIts : -1,
+        created_at : '31/05/2018 9:50 AM'
+      },
+      {
+        title : 'Encore un post',
+        content : 'Ce qui nous fait trois posts normalement.',
+        loveIts : 0,
+        created_at : '31/05/2018 9:50 AM'
+      },
+    ];
+
     appareils=
       [
         {

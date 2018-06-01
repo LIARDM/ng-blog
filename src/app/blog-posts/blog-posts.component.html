@@ -1,0 +1,10 @@
+<div class="container-fluid">
+    <div class="jumbotron" [ngStyle]="{background : getLoveItsColorPost()}">
+        <h2 >{{ title }}</h2>
+        <p>{{ content }}</p>
+        <div class="btn-group" role="group" aria-label="Votre avis :">
+          <button class="btn btn-success" type="button" name="button" onclick="addLove()">J'aime !</button>
+          <button class="btn btn-danger" type="button" name="button" onclick="removeLove()">Je n'aime pas !</button>
+        </div>
+    </div>
+</div>
