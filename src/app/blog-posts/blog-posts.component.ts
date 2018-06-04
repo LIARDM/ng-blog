@@ -14,7 +14,7 @@ export class BlogPostsComponent implements OnInit
 
   constructor()
   {
-
+    var date = new Date();
   }
   ngOnInit()
   {
@@ -34,15 +34,15 @@ export class BlogPostsComponent implements OnInit
   {
       if(this.loveIts > 0)
       {
-        return 'green';
+        return 'list-group-item list-group-item-success';
       }
       else if(this.loveIts < 0)
       {
-        return 'red';
+        return 'list-group-item list-group-item-danger';
       }
       else
       {
-        return 'white';
+        return 'list-group-item list-group-item-light';
       }
   }
 }

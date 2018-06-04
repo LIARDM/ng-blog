@@ -1,34 +1,14 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <h1>Blog d'Activité OpenClassRooms</h1>
+    <div class="col-xl-12">
+      <h1>Blog d'Activité OpenClassrooms</h1>
         <app-blog-posts *ngFor="let blogPost of blogPosts"
          [title]="blogPost.title"
          [content]="blogPost.content"
          [loveIts]="blogPost.loveIts"
-         [created_at]="blogPost.loveIts">
+         [created_at]="blogPost.created_at">
         </app-blog-posts>
     </div>
   </div>
 </div>
-
-<!--
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>Mes Appareils : </h2>
-      <p>Mis-à-jour le : {{ lastUpdate | async | date: 'dd/MM/yyyy' }}</p>
-      <ul class="list-group">
-        <app-mes-appareils *ngFor="let appareil of appareils"
-          [mesAppareilsName]="appareil.name"
-          [mesAppareilsStatus] = "appareil.status">
-        </app-mes-appareils>
-      </ul>
-      <button class="btn btn-success"
-        [disabled]="!isAuth"
-        (click)="onAllumer()">Tout allumer</button>
-    </div>
-  </div>
-</div>
--->
